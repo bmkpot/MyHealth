@@ -63,24 +63,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.014" />
 
     <TextView
         android:id="@+id/calories"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_gravity="center"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="110"
         android:textColor="#D50F25"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/calText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/calText"
@@ -89,17 +94,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/calories"
         android:text="@string/cal_text"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.62"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/calories"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+        app:layout_constraintVertical_bias="0.04" />
 
     <ImageView
         android:id="@+id/nextPage"
@@ -110,11 +114,11 @@
         android:src="@drawable/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/calories"
-        app:layout_constraintVertical_bias="0.404" />
-
+        app:layout_constraintTop_toBottomOf="@+id/calories"
+        app:layout_constraintVertical_bias="0.33" />
+<!--
     <TextView
         android:id="@+id/footerText"
         android:layout_width="377dp"
@@ -132,5 +136,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nextPage"
         app:layout_constraintVertical_bias="1.0" />
-
+-->
 </android.support.constraint.ConstraintLayout>

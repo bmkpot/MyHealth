@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3369E8"
+    tools:context=".FoodItemActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/cal_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.062">
+
+        <TextView
+            android:id="@+id/foodItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mkpot"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/caloriesTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/caloriesValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/consumeDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consumed Date"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/shareButtonText"
+            android:text="@string/share_title"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:background="@drawable/circle"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

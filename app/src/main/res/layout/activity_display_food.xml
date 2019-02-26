@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3369E8"
-    tools:context=".DisplayFoodActivity">
+    tools:context="DisplayFoodActivity">
 
 
     <LinearLayout
@@ -24,9 +24,9 @@
         app:layout_constraintVertical_bias="0">
 
         <TextView
+            android:id="@+id/totalAmountTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:text="@string/food_total_text"
@@ -59,7 +59,6 @@
         android:id="@+id/list_item"
         android:layout_width="414dp"
         android:layout_height="688dp"
-
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
