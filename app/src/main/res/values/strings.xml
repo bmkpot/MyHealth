@@ -7,7 +7,16 @@
     <string name="delete_item">Delete Item</string>
     <string name="share_title">Share</string>
     <string name="food_total_text">Total Calories:</string>
-    <string name="cal_text">Cal.</string>
+    <string name="cal_text">Cal</string>
     <string name="food_items_num">Food Items:</string>
     <string name="github">github.com/bmkpot</string>
+    <string name="food_items_name">Mkpot</string>
+    <string name="calories_text">Calories:</string>
+    <string name="calories_value_text">180</string>
+    <string name="consumed_date_text">Consumed Date</string>
+    <string name="text_view">|</string>
+    <string name="name_text_view">Name Of Food</string>
+    <string name="date_text">Date text</string>
+    <string name="calories_text_view">110</string>
+
 </resources>

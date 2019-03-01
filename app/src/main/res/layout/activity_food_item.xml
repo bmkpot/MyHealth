@@ -46,16 +46,16 @@
             android:id="@+id/foodItemName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="mkpot"
-            android:textSize="18sp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center" />
+            android:text="@string/food_items_name"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/caloriesTitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calories:"
+            android:text="@string/calories_text"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
@@ -65,7 +65,7 @@
             android:id="@+id/caloriesValueText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="180"
+            android:text="@string/calories_value_text"
             android:textSize="18sp"
             android:layout_marginTop="12dp"
             android:layout_gravity="center_horizontal"
@@ -75,7 +75,7 @@
             android:id="@+id/consumeDateText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Consumed Date"
+            android:text="@string/consumed_date_text"
             android:textSize="16sp"
             android:textStyle="italic"
             android:layout_marginTop="10dp"

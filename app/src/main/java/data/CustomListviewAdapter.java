@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.obenacademy.myhealth.FoodItemDetailsActivity;
+import com.obenacademy.myhealth.FoodItemActivity;
 import com.obenacademy.myhealth.R;
 
 import java.util.ArrayList;
@@ -85,7 +85,7 @@ public class CustomListviewAdapter extends ArrayAdapter<Food> {
          @Override
                  public void onClick(View v){
 
-             Intent i = new Intent(activity, FoodItemDetailsActivity.class);
+             Intent i = new Intent(activity, FoodItemActivity.class);
 
              Bundle mBundle = new Bundle();
              mBundle.putSerializable("userObject", finalHolder.food);
