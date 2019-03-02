@@ -82,8 +82,6 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="43dp"
-
-
         android:background="#D50F25"
         android:paddingTop="5dp"
         android:text="@string/github"

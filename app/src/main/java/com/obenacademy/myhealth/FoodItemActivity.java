@@ -1,6 +1,5 @@
 package com.obenacademy.myhealth;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
@@ -22,7 +21,7 @@ public class FoodItemActivity extends AppCompatActivity {
         foodName = (TextView) findViewById(R.id.foodItemName);
         calories = (TextView) findViewById(R.id.caloriesValueText);
         dateTaken = (TextView) findViewById(R.id.consumeDateText);
-        shareButton = (Button) findViewById(R.id.shareButtonText);
+        shareButton = (Button) findViewById(R.id.shareBtText);
 
         Food food = (Food) getIntent().getSerializableExtra("userObject");
 
@@ -32,7 +31,6 @@ public class FoodItemActivity extends AppCompatActivity {
 
         foodId = food.getFoodId();
 
-        calories.setTextSize(40.2f);
-        calories.setTextColor(Color.RED);
+
     }
 }

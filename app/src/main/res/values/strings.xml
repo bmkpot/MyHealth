@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MyHealth</string>
     <string name="title_text">MyHealth</string>
-    <string name="hint_food">What did you eat today?</string>
-    <string name="hint_calories">Calories Counter</string>
+    <string name="hint_food">What did you eat?</string>
+    <string name="hint_calories">Enter Calories</string>
     <string name="submit_text">Submit</string>
     <string name="delete_item">Delete Item</string>
     <string name="share_title">Share</string>
@@ -18,5 +18,6 @@
     <string name="name_text_view">Name Of Food</string>
     <string name="date_text">Date text</string>
     <string name="calories_text_view">110</string>
+    <string name="share_bt_text">SHARE</string>
 
 </resources>

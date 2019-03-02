@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/food_items_num"
-            android:textColor="#3369E8"
+
             android:textSize="18sp"
             android:textStyle="bold" />
 
