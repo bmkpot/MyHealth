@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".UserRegistrationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter email"
-            android:inputType="textEmailAddress"
+             android:inputType="textEmailAddress"
             android:layout_margin="18dp"/>
 
         <EditText
@@ -40,23 +40,19 @@
             android:layout_margin="18dp"/>
 
         <Button
-            android:id="@+id/buttonSignIn"
+            android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="Register User"
             android:layout_margin="18dp"/>
 
         <EditText
-            android:id="@+id/textViewSignup"
+            android:id="@+id/textViewSignin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New User? SignUp here"
+            android:text="Already a User? Sign in here"
             android:textAlignment="center"/>
 
-
     </LinearLayout>
-
-
-
 
 </RelativeLayout>

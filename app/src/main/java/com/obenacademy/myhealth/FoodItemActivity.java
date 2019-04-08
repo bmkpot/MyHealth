@@ -86,6 +86,11 @@ public class FoodItemActivity extends AppCompatActivity {
     }
 @Override
     public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.buttonHome:
+                Intent intent = new Intent(FoodItemActivity.this, MainActivity.class);
+                startActivity(intent);
+        }
         int id = item.getItemId();
         //super.onOptionsItemSelected(item);
         if (id == R.id.deleteItem){

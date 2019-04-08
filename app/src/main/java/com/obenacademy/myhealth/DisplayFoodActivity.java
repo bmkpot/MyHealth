@@ -1,5 +1,6 @@
 package com.obenacademy.myhealth;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -92,8 +93,8 @@ public class  DisplayFoodActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.searchItem:
-                Toast.makeText(this, "Search selected", Toast.LENGTH_LONG).show();
-                return true;
+                Intent intent = new Intent(DisplayFoodActivity.this, WebViewActivity.class);
+                startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
