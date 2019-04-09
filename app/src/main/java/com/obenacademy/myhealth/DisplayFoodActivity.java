@@ -91,9 +91,15 @@ public class  DisplayFoodActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.searchItem:
                 Intent intent = new Intent(DisplayFoodActivity.this, WebViewActivity.class);
+                startActivity(intent);
+
+        }
+        switch (item.getItemId()){
+            case R.id.scannerItem:
+                Intent intent = new Intent(DisplayFoodActivity.this, ScannerActivity.class);
                 startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
