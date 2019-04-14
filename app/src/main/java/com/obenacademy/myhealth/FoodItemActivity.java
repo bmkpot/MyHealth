@@ -91,6 +91,13 @@ public class FoodItemActivity extends AppCompatActivity {
                 Intent intent = new Intent(FoodItemActivity.this, MainActivity.class);
                 startActivity(intent);
         }
+
+    switch (item.getItemId()) {
+        case R.id.scannerItem:
+            Intent intent = new Intent(FoodItemActivity.this, ScannerActivity.class);
+            startActivity(intent);
+
+    }
         int id = item.getItemId();
         //super.onOptionsItemSelected(item);
         if (id == R.id.deleteItem){

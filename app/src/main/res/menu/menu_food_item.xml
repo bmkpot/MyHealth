@@ -17,5 +17,12 @@
         android:title="Home"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/scannerItem"
+        android:icon="@drawable/ic_photo_camera"
+        android:orderInCategory="100"
+        android:title="Scanner"
+        app:showAsAction="never" />
+
 
 </menu>
