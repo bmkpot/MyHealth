@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.MenuAdapter;
+import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,11 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         int calories = Integer.parseInt(calsString);
 
-        if (name.equals("") || calsString.equals("")){
+        if (name.equals("") || calsString.equals("")) {
 
             Toast.makeText(getApplicationContext(), "Empty fields not allowed", Toast.LENGTH_LONG).show();
 
-        }else {
+        } else {
             food.setFoodName(name);
             food.setCalories(calories);
 
@@ -63,11 +64,36 @@ public class MainActivity extends AppCompatActivity {
             foodCalories.setText("");
 
             //take users to next screen (display all entered items)
-           startActivity(new Intent(MainActivity.this, DisplayFoodActivity.class));
+            startActivity(new Intent(MainActivity.this, DisplayFoodActivity.class));
         }
-
-
-        }
-
     }
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.menu_main, menu);
+            return true;
+        }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.scannerItem:
+                    Intent intent = new Intent(MainActivity.this, ScannerActivity.class);
+                    startActivity(intent);
+
+            }
+            switch (item.getItemId()){
+                case R.id.displayFood:
+                    Intent intent = new Intent(MainActivity.this, DisplayFoodActivity.class);
+                    startActivity(intent);
+
+            }
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+
+
+
 
