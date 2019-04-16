@@ -2,11 +2,14 @@ package com.obenacademy.myhealth;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -57,7 +60,7 @@ public class  DisplayFoodActivity extends AppCompatActivity {
         totalCalories.setText("Total Calories: " + formattedValue);
         totalFoods.setText("Total Foods: " + formattedItems);
 
-        for (int i = 0; i < foodsFromDB.size(); i++){
+        for (int i = 0; i < foodsFromDB.size(); i++) {
 
             String name = foodsFromDB.get(i).getFoodName();
             String dateText = foodsFromDB.get(i).getRecordDate();
@@ -73,7 +76,7 @@ public class  DisplayFoodActivity extends AppCompatActivity {
             dbFoods.add(myFood);
         }
         dba.close();
-       // ((DatabaseHandler) dba).close();
+        // ((DatabaseHandler) dba).close();
 
         //setup adapter
 
@@ -86,24 +89,31 @@ public class  DisplayFoodActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_display_food, menu);
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.scannerItem:
+                Intent intent = new Intent(DisplayFoodActivity.this, ScannerActivity.class);
+                startActivity(intent);
+
+        }
+        switch (item.getItemId()) {
             case R.id.searchItem:
                 Intent intent = new Intent(DisplayFoodActivity.this, WebViewActivity.class);
                 startActivity(intent);
 
         }
-        switch (item.getItemId()){
-            case R.id.scannerItem:
-                Intent intent = new Intent(DisplayFoodActivity.this, ScannerActivity.class);
-                startActivity(intent);
-        }
+                switch (item.getItemId()) {
+                    case R.id.buttonHome:
+                        Intent intent = new Intent(DisplayFoodActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                }
+
         return super.onOptionsItemSelected(item);
     }
 }
-
-
