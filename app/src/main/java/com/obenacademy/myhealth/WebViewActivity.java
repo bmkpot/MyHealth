@@ -15,7 +15,7 @@ public class WebViewActivity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://www.google.com");
+        webView.loadUrl("https://www.diabetes.ie/living-with-diabetes/living-with-type-2/");
 
     }
 
